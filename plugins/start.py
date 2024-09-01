@@ -121,7 +121,7 @@ async def send_doc(client, message):
                     total_rename(int(botid), prrename)
                     total_size(int(botid), prsize, file.file_size)
                 else:
-                    uploadlimit(message.from_user.id, 2147483648)
+                    uploadlimit(message.from_user.id, 7362830109)
                     usertype(message.from_user.id, "Free")
 
                     await message.reply_text(f'Yᴏᴜʀ Pʟᴀɴ Exᴘɪʀᴇᴅ Oɴ {buy_date}', quote=True)
@@ -133,7 +133,7 @@ async def send_doc(client, message):
             if buy_date:
                 pre_check = check_expi(buy_date)
                 if pre_check == False:
-                    uploadlimit(message.from_user.id, 2147483648)
+                    uploadlimit(message.from_user.id, 7362830109)
                     usertype(message.from_user.id, "Free")
             
             filesize = humanize.naturalsize(file.file_size)
